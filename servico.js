@@ -15,6 +15,3 @@ function decimalParaRomano(numero) {
 
 exports.decimalParaRomano = decimalParaRomano;
 
-//console.log(decimalParaRomano(2024));
-//console.log(decimalParaRomano(-10));
-console.log(decimalParaRomano(49));
