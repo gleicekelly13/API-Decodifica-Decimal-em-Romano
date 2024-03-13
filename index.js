@@ -7,7 +7,7 @@ const { decimalParaRomano } = require('./servico');
 app.get('/', (req, res) => {
     let numero = req.query.numero;
     
-    if(numero <= 0) { //A validação de entrada(verificação de números negativos, foi transferida para a rota do Express)
+    if(numero <= 0) { 
         res.status(400).json({ 'Erro' : 'Números negativos não podem ser convertidos para algarismos romanos.'});
     } else if (isNaN(numero)) {
         res.status(400).json({'Erro' : 'Requisição inválida!'});
